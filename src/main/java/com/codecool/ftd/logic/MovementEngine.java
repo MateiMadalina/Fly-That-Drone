@@ -12,6 +12,6 @@ public class MovementEngine {
     }
 
     public List<String> getCommands() {
-        return List.of( "forward","backward", "left","right","up","down");
+        return List.of( "forward","backward", "left","right","up","down", "forward-left", "forward-right", "backward-Left","backward-right");
     }
 }

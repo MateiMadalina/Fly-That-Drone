@@ -40,18 +40,17 @@ public class FlyThatDroneUi {
         System.out.print("\nChoice: ");
         String choice = scanner.next();
         System.out.println(choice);
-        if(choice.equals("forward")){
-            movementEngine.move(drone, choice, new MoveForward());
-        } else if (choice.equals("backward")) {
-            movementEngine.move(drone, choice, new MoveBackward());
-        }else if (choice.equals("left")) {
-            movementEngine.move(drone, choice, new MoveLeft());
-        }else if (choice.equals("right")) {
-            movementEngine.move(drone, choice, new MoveRight());
-        }else if (choice.equals("up")) {
-            movementEngine.move(drone, choice, new MoveUp());
-        }else if (choice.equals("down")) {
-            movementEngine.move(drone, choice, new MoveDown());
+        switch (choice) {
+            case "forward" -> movementEngine.move(drone, choice, new MoveForward());
+            case "backward" -> movementEngine.move(drone, choice, new MoveBackward());
+            case "left" -> movementEngine.move(drone, choice, new MoveLeft());
+            case "right" -> movementEngine.move(drone, choice, new MoveRight());
+            case "up" -> movementEngine.move(drone, choice, new MoveUp());
+            case "down" -> movementEngine.move(drone, choice, new MoveDown());
+            case "forward-left" -> movementEngine.move(drone, choice, new MoveForwardLeft());
+            case "forward-right" -> movementEngine.move(drone, choice, new MoveForwardRight());
+            case "backward-left" -> movementEngine.move(drone, choice, new MoveBackwardLeft());
+            case "backward-right" -> movementEngine.move(drone, choice, new MoveBackwardRight());
         }
 
     }
