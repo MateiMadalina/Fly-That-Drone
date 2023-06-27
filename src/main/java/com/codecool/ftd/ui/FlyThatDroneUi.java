@@ -40,8 +40,7 @@ public class FlyThatDroneUi {
         System.out.print("\nChoice: ");
         String choice = scanner.next();
         System.out.println(choice);
-        //|| choice.equals("backwar") || choice.equals("left") || choice.equals("right")
-        if(choice.equals("forward") ){
+        if(choice.equals("forward")){
             movementEngine.move(drone, choice, new MoveForward());
         } else if (choice.equals("backward")) {
             movementEngine.move(drone, choice, new MoveBackward());
@@ -49,8 +48,11 @@ public class FlyThatDroneUi {
             movementEngine.move(drone, choice, new MoveLeft());
         }else if (choice.equals("right")) {
             movementEngine.move(drone, choice, new MoveRight());
+        }else if (choice.equals("up")) {
+            movementEngine.move(drone, choice, new MoveUp());
+        }else if (choice.equals("down")) {
+            movementEngine.move(drone, choice, new MoveDown());
         }
-
 
     }
 }
