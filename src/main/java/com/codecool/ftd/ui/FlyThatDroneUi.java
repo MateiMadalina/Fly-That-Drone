@@ -1,7 +1,7 @@
 package com.codecool.ftd.ui;
 
 import com.codecool.ftd.data.Drone;
-import com.codecool.ftd.logic.MovementEngine;
+import com.codecool.ftd.logic.*;
 
 import java.util.Scanner;
 
@@ -39,6 +39,18 @@ public class FlyThatDroneUi {
     private void handleChoice() {
         System.out.print("\nChoice: ");
         String choice = scanner.next();
-        movementEngine.move(drone, choice);
+        System.out.println(choice);
+        //|| choice.equals("backwar") || choice.equals("left") || choice.equals("right")
+        if(choice.equals("forward") ){
+            movementEngine.move(drone, choice, new MoveForward());
+        } else if (choice.equals("backward")) {
+            movementEngine.move(drone, choice, new MoveBackward());
+        }else if (choice.equals("left")) {
+            movementEngine.move(drone, choice, new MoveLeft());
+        }else if (choice.equals("right")) {
+            movementEngine.move(drone, choice, new MoveRight());
+        }
+
+
     }
 }

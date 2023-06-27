@@ -9,12 +9,12 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
-//        Position startingPosition = new Position(0, 0, 0);
-//        Drone drone = new Drone(startingPosition);
-//        MovementEngine movementEngine = new MovementEngine();
-//        Scanner scanner = new Scanner(System.in);
-//        FlyThatDroneUi flyThatDroneUi = new FlyThatDroneUi(drone, movementEngine, scanner);
-//        flyThatDroneUi.start();
+        Position startingPosition = new Position(0, 0, 0);
+        Drone drone = new Drone(startingPosition);
+        MovementEngine movementEngine = new MovementEngine();
+        Scanner scanner = new Scanner(System.in);
+        FlyThatDroneUi flyThatDroneUi = new FlyThatDroneUi(drone, movementEngine, scanner);
+        flyThatDroneUi.start();
 
     }
 }
