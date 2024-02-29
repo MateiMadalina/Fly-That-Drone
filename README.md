@@ -12,7 +12,6 @@ It's a Java project that creates a flexible simulation engine for showcasing dro
 
 - **Air Movement**: Up and Down
 
-- **Parameterized Tests**
 
 ## How to Use
 
