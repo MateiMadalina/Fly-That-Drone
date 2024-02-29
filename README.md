@@ -6,10 +6,13 @@ It's a Java project that creates a flexible simulation engine for showcasing dro
 
 ## Tasks
 
-**Basic Ground Movement** : Forward, Backward, Left, and Right
-**Diagonal Movement** :  Forward-Left, Forward-Right, Backward-Left, and Backward-Right
-**Air Movement** : Up and Down
-**Parameterized Tests**
+- **Basic Ground Movement**: Forward, Backward, Left, and Right
+
+- **Diagonal Movement**:  Forward-Left, Forward-Right, Backward-Left, and Backward-Right
+
+- **Air Movement**: Up and Down
+
+- **Parameterized Tests**
 
 ## How to Use
 
